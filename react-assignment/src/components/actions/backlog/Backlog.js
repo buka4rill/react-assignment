@@ -77,7 +77,7 @@ class Backlog extends Component {
                 </div>
     
                 {/* Input Section */}
-                <form action="" className="form" onSubmit={(e) => this.onSubmit(e) } >
+                <form action="" className="form mb-3" onSubmit={(e) => this.onSubmit(e) } >
                     <textarea 
                         type="text" 
                         name="text" 
