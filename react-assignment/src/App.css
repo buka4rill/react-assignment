@@ -10603,4 +10603,16 @@ body {
     padding: 3px 13px;
     color: white;
 }
-  
+
+
+.nav-container {
+    border-bottom: 1px solid rgba(.65, .64, .64, .2);
+    /* opacity: 0.2; */
+}
+ 
+.links > li > a {
+    color: #03293D;
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 500;
+}
