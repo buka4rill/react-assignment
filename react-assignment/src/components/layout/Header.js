@@ -23,7 +23,11 @@ const Header = ({ title }) => {
                     &nbsp;&nbsp;
                     <span> { title } </span>
                     &nbsp;&nbsp;
-                    <span> ... </span>
+                    <span>
+                        <a href="!#" style={{ color: 'inherit' }}>
+                            <i className="fas fa-ellipsis-h"></i>
+                        </a>
+                    </span>
                 </div>
 
                 {/* Search Input Section */}
@@ -31,7 +35,7 @@ const Header = ({ title }) => {
                     <form action="">
                         <div className="form-group d-flex align-items-center justify-items-center">
                             <label htmlFor="" className="d-flex mx-auto my-auto align-items-center justify-items-center">
-                                <i class="fas fa-search" style={{ color: 'rgb(224 223 223)' }}></i>
+                                <i className="fas fa-search" style={{ color: 'rgb(224 223 223)' }}></i>
                             </label>
                             &nbsp;&nbsp;&nbsp;
                             <input type="text" className="form-control" style={{ border: 'none', fontFamily: 'Nunito Sans' }} placeholder="Search" />
@@ -42,7 +46,7 @@ const Header = ({ title }) => {
                 {/* User Section */}
                 <div className="navbar-nav ml-auto">
                     <div className="navbar-item my-auto">
-                        <i class="far fa-bell"></i>
+                        <i className="far fa-bell"></i>
                     </div>
 
                     <div className="navbar-item my-auto ml-5">
