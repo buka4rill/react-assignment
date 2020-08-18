@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import AddButton from '../AddButton';
 
 import PropTypes from 'prop-types';
@@ -56,7 +56,7 @@ class Backlog extends Component {
 
     render() {
         return (
-            <div className="col-md-2 px-0">
+            <Fragment>
                 <div className="heading d-flex justify-content-between mb-3">
                     <span>
                         Backlog 
@@ -88,7 +88,7 @@ class Backlog extends Component {
                         value={this.state.text}
                     ></textarea>
                 </form>
-            </div>
+            </Fragment>
         )
     }
 }
