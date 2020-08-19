@@ -10727,3 +10727,43 @@ body {
     align-content: center;
     vertical-align: middle;
 }
+
+.component-display {
+  background: #FFFFFF;
+  height: 569px;
+
+}
+
+.test-case > span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.case-btn {
+  color: #fff;
+  background: linear-gradient(0deg, #4DBD98, #4DBD98), 
+  linear-gradient(0deg, #4DBD98, #4DBD98), 
+  linear-gradient(0deg, #4DBD98, #4DBD98), #4DBD98;
+  border: 2px solid rgba(26, 12, 47, 0.1);
+  border-color: #4DBD98;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tst-pg > .row {
+  flex-wrap: nowrap;
+}
+
+.card-container > .row > .card {
+  height: 112px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  color: white;
+  padding: 14px;
+}
+
+/* .card-icon {
+  padding: 3px;
+  
+} */
