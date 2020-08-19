@@ -11,33 +11,29 @@ class Backlog extends Component {
     };
 
     // Proptypes
-    // static PropTypes = {
-    //     addBacklogs: PropTypes.func.isRequired,
-    // }
+    static propTypes = {
+        addBacklogs: PropTypes.func.isRequired,
+    }
 
     // Actions
-    // onKeyUp = e => {
-    //     if (e.key === 'Enter') {
-    //         e.preventDefault();
-    //     }
-    // }
-
     onChange = e => {
         this.setState({ [e.target.name]: e.target.value });
     }
 
     onSubmit = e => {
         e.preventDefault();
-
-        // this.onKeyPress();
-        // console.log(this.state.text)
        
         // form verification
         if (this.state.text === '') {
             // Do something
         } else {
-            console.log(this.state.text);
-            // this.props.addBacklogs(this.state.text);
+            // console.log(this.state.text);
+            
+            // Add Backlogs cards
+            this.props.addBacklogs(this.state.text);
+
+            // Clear state
+            this.setState({ title: '' });
         }
 
     }
@@ -77,7 +73,7 @@ class Backlog extends Component {
                 </div>
     
                 {/* Input Section */}
-                <form action="" className="form mb-3" onSubmit={(e) => this.onSubmit(e) } >
+                <form action="" className="form mb-2" onSubmit={(e) => this.onSubmit(e) } >
                     <textarea 
                         type="text" 
                         name="text" 
