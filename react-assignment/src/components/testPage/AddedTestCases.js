@@ -1,4 +1,5 @@
 import React from 'react';
+import OptionsModal from './OptionsModal';
 
 const AddedTestCases = () => {
     return (
@@ -13,11 +14,19 @@ const AddedTestCases = () => {
                 <div className="test-case d-flex justify-content-between px-4 mb-3">
                     <span className="py-auto my-auto"> Make the background image blur </span>
 
-                    <button className="btn case-btn"> 
-                        Pass 
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <i className="fas fa-angle-down"></i>
-                    </button>
+                    <div className="button-section">
+                        <button className="btn case-btn"> 
+                            Pass 
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <i className="fas fa-angle-down"></i>
+                        </button>
+                        
+                        <div className="modaal">
+                            <OptionsModal />
+
+                        </div>
+                    </div>
+                    
                 </div>
 
                 <div className="test-case d-flex justify-content-between px-4">

@@ -26,9 +26,15 @@ class ActionsSection extends Component {
                         <div className="col-lg-2 col-md-3 px-0 mr-2">
                             <Backlog addBacklogs={this.props.addBacklogs} />
 
-                            {this.props.backlogs.map((backlog) => (
-                                <ActionCard key={backlog.id} backlog={backlog} />
-                            ))}
+                            <div className="simplebar" data-simplebar data-simplebar-auto-hide="false">
+                            <div className="card-scroll-1" >
+                                {this.props.backlogs.map((backlog) => (
+                                    <ActionCard key={backlog.id} backlog={backlog} />
+                                ))}
+                            </div>
+                            </div>
+                            
+                            
                         </div>
     
                         <div className="col-lg-2 col-md-3 px-0 mr-2">

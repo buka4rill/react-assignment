@@ -4,7 +4,7 @@ import Header from './components/layout/Header';
 import Navbar from './components/layout/Navbar';
 import Action from './components/actions/ActionsSection';
 import TestPageSection from './components/testPage/TestPageSection';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import uuid from 'uuid';
 
 class App extends Component {

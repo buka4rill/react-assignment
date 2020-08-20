@@ -3,13 +3,14 @@ import logo from './fcmb.png';
 import vector from './Vector.png';
 import profileImg from './profileImg.png';
 import caret from './Vector2.png';
+import owner from './owner.png'
 
 import PropTypes from 'prop-types';
 
 const Header = ({ title }) => {
     return (
         <div className="container-fluid bg-white">
-            <nav className="navbar navbar-expand-lg bg-white">
+            <nav className="navbar navbar-expand-lg bg-white py-3">
                 {/* Menu Bars */}
                 <div className="navbar-nav menu-bars">
                     <span id="top"></span>
@@ -33,7 +34,7 @@ const Header = ({ title }) => {
                 {/* Search Input Section */}
                 <div className="navbar-nav ml-5">
                     <form action="">
-                        <div className="form-group d-flex align-items-center justify-items-center">
+                        <div className="form-group d-flex align-items-center justify-items-center mb-0 border-left pl-4">
                             <label htmlFor="" className="d-flex mx-auto my-auto align-items-center justify-items-center">
                                 <i className="fas fa-search" style={{ color: 'rgb(224 223 223)' }}></i>
                             </label>
@@ -50,8 +51,11 @@ const Header = ({ title }) => {
                     </div>
 
                     <div className="navbar-item my-auto ml-5">
-                        <div className="owner-tag">
-                            owner
+                        
+                        <div className="owner-tag py-2">
+                            <img src={owner} alt="."/>
+                            &nbsp; |  &nbsp;
+                            OWNER
                         </div>
                     </div>
 

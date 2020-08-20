@@ -1,5 +1,4 @@
 import React from 'react';
-import bag from './bag.png';
 
 const QuickOverview = () => {
     return (

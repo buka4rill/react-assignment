@@ -15,7 +15,7 @@ class ActionCard extends Component {
     }
 
     render() {
-        console.log(this.props.backlog)
+        // console.log(this.props.backlog)
         return (
             <div className="action-card card mb-2">
                 <div className="text-section top d-flex justify-content-between mb-2">
@@ -44,7 +44,7 @@ class ActionCard extends Component {
                         
                     </div>
                 </div>
-            </div>
+            </div>    
         )
     }
 }
