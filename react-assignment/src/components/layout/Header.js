@@ -12,11 +12,14 @@ const Header = ({ title }) => {
         <div className="container-fluid bg-white">
             <nav className="navbar navbar-expand-lg bg-white py-3">
                 {/* Menu Bars */}
-                <div className="navbar-nav menu-bars">
-                    <span id="top"></span>
-                    <span id="mid"></span>
-                    <span id="bottom"></span>
-                </div>
+                <a href="!#" className="nav-link p-0">
+                    <div className="navbar-nav menu-bars">
+                        <span id="top"></span>
+                        <span id="mid"></span>
+                        <span id="bottom"></span>
+                    </div>
+                </a>
+                
 
                 {/* Logo Section */}
                 <div className="navbar-brand logoSection ml-5">

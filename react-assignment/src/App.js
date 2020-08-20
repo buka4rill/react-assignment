@@ -6,6 +6,7 @@ import Action from './components/actions/ActionsSection';
 import TestPageSection from './components/testPage/TestPageSection';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import uuid from 'uuid';
+import Sidenav from './components/layout/Sidenav';
 
 class App extends Component {
 
@@ -57,6 +58,7 @@ class App extends Component {
         <div className="App">
           <Header />
           <Navbar />
+          <Sidenav />
           
           <Route exact path="/" render={ props => (
             <Fragment>

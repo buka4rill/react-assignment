@@ -10553,7 +10553,7 @@ body {
 
 .menu-bars {
     height: 27px;
-    width: 35px;
+    width: 28px;
     padding: 1px;
     display: block;
 }
@@ -10564,7 +10564,7 @@ body {
     height: 2px;
     background: #03293D;
     display: block;
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 1px;
     border-radius: 6px;
 }
@@ -10574,7 +10574,7 @@ body {
     height: 2px;
     background: #03293D;
     display: block;
-    border: 1px solid;
+    /* border: 1px solid; */
     margin-top: 6px;
     margin-bottom: 7px;
     padding: 1px;
@@ -10793,10 +10793,10 @@ body {
   height: 70vh;
 }
 
-.button-section {
-  /* display: flex; */
-  /* position: absolute; */
-}
+/* .button-section {
+  display: flex;
+  position: absolute;
+} */
 
 .modaal {
   width: 188px;
@@ -10820,4 +10820,35 @@ body {
 
 .borderrd > li:hover {
   background: #E8E7EA
+}
+
+.modal-search::placeholder {
+  /* color: rgba(0.1, 0.16, 0.24) */
+  color: #03293D;
+}
+
+.sidenav {
+  background: #052231;
+  width: 96px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 4;
+}
+
+.section-2 > span {
+  border-radius: 10px;
+}
+
+.section-2 > span:hover {
+  cursor: pointer;
+}
+
+.active {
+  background: #23B3E8;
+}
+
+.close-side-nav:hover {
+  cursor: pointer;
 }
