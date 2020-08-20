@@ -27,8 +27,16 @@ class TestPageSection extends Component {
                             ))}
                         </div>
     
-                        <div className="col-lg-5  px-0 mr-3">
-                            <AddedTestCases />
+                        <div className="col-lg-5 px-0 mr-3">
+                            <div className="heading d-flex justify-content-between mb-3">
+                                <span>
+                                    Added Test Case
+                                </span>
+                            </div>
+                            <div className="component-display py-4">
+                                {this.props.backlogs.map((backlog) => (<AddedTestCases key={backlog.id} backlog={backlog}/>))}
+                            </div>
+                            
                         </div>
     
                         <div className="col-lg-5  px-0 ">

@@ -22,6 +22,12 @@ const Navbar = () => {
                         <a href="!#" className="nav-link"> Progress </a>
                     </li>
                 </ul>
+
+                <div style={{ color: '#4DBD98', fontSize: '13px'}}>
+                    <i className="far fa-calendar-alt"></i>
+                    &nbsp;
+                    Project Deadline: 10-june-2020
+                </div>
             </div>
         </div>
     )

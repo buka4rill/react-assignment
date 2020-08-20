@@ -12,7 +12,7 @@ class OptionsModal extends Component {
     render() {
         return (
             <Fragment>
-                <div class="card">
+                <div className="card">
                     <div>
                         <form action="">
                             <div className="form-group d-flex px-2 pt-3">

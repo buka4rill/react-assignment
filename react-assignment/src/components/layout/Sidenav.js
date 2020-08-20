@@ -53,7 +53,7 @@ const Sidenav = () => {
 
                 <div className="section-4 mt-5 d-flex text-center justify-content-center align-items-center" >
                     <span className="close-side-nav p-2 text-white d-flex text-center justify-content-center align-items-center" style={{ background: 'rgb(232,231,234,0.2)', borderRadius: '50%', width: '40px', height: '40px'}}>
-                        <i class="fas fa-angle-left text-white" style={{ opacity: '1'}}></i>
+                        <i className="fas fa-angle-left text-white" style={{ opacity: '1'}}></i>
                     </span>
                 </div>
 

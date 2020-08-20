@@ -19,17 +19,20 @@ class App extends Component {
         {
           id: uuid.v4(),
           title: 'Apply gradient colours on the dashboard sidenav',
-          date: 'Due Aug 8'
+          date: 'Due Aug 8',
+          isNotClicked: true
         },  
         {
           id: uuid.v4(),
           title: 'Make Background Image blur',
-          date: 'Due Aug 9'
+          date: 'Due Aug 9',
+          isNotClicked: true,
         },  
         {
           id: uuid.v4(),
           title: 'Apply gradient colours on the navigations',
-          date: 'Due Aug 10'
+          date: 'Due Aug 10',
+          isNotClicked: true
         },  
       ]
     }
@@ -43,7 +46,8 @@ class App extends Component {
     const newBacklog = {
       id: uuid.v4(),
       title: text,
-      date: 'Due Aug 12'
+      date: 'Due Aug 12',
+      isNotClicked: true
     }
 
     // Set newBacklog state
@@ -52,7 +56,7 @@ class App extends Component {
 
 
   render() {
-    console.log(this.state.actions.backlogs);
+    // console.log(this.state.actions.backlogs);
     return (
       <Router>
         <div className="App">
