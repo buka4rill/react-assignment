@@ -92,12 +92,15 @@ class App extends Component {
   // Add backlogs cards
   addBacklogs = text => {
     // Pass text into State
-    // const newBacklog = {
-    //   id: uuid.v4(),
-    //   title: text,
-    //   date: 'Due Aug 12',
-    //   isNotClicked: true
-    // }
+    const newBacklog = {
+      id: uuid.v4(),
+      title: text,
+      date: 'Due Aug 12',
+      isNotClicked: true
+    }
+
+    // Set newBacklog state
+    this.setState({ actions: { backlogs: [...this.state.actions.backlogs, newBacklog] } });
 
     // Add to LS
     // let lsBacklogs;
