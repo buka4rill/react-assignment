@@ -59,8 +59,9 @@ class Backlog extends Component {
 
     //     // If there are backlogs in localstorage, set state
     //     if (localStorage.getItem('backlogs')) {
+    //         // console.log(this.backlogData)
     //         this.setState({
-    //             title: this.backlogData.title,
+    //             title: this.backlogData,
     //         })
     //     } else {
     //         this.setState({
@@ -68,7 +69,7 @@ class Backlog extends Component {
     //         })
     //     }
 
-    //     console.log(this.backlogData);
+    //     // console.log(this.backlogData);
     // } 
 
 

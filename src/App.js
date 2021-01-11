@@ -81,7 +81,7 @@ class App extends Component {
         },  
       ],
 
-      // backlogs: this.getBacklogsFromLS(),
+      // backlogs: [{localStorage}],
 
       showSideBar: false,
     }
@@ -129,6 +129,26 @@ class App extends Component {
     // } 
   }
 
+
+  componentDidMount() {
+    console.log(localStorage)
+    this.backlogData = JSON.parse(localStorage.getItem('backlogs'));
+
+    // If there are backlogs in localstorage, set state
+    if (localStorage.getItem('backlogs')) {
+        this.setState({
+            ...this.state,
+            title: this.backlogData,
+        })
+    } else {
+        this.setState({
+            title: ''
+        })
+    }
+
+    console.log(this.backlogData);
+  } 
+  
   // componentDidMount() {
   //   // this.logData = JSON.parse(localStorage.getItem('backlogs'));
 
