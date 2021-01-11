@@ -5,7 +5,10 @@ import snicon2 from './snicon2.png';
 import snicon3 from './snicon3.png';
 // import snicon4 from './snicon4.png';
 
-const Sidenav = () => {
+const Sidenav = ({ closeSideBar }) => {
+    // Props passed above
+    // console.log(closeSideBar)
+
     return (
         <Fragment>
             <div className="sidenav">
@@ -52,7 +55,11 @@ const Sidenav = () => {
                 <hr style={{ background: '#E8E7EA', opacity: '0.1' }}/>   
 
                 <div className="section-4 mt-5 d-flex text-center justify-content-center align-items-center" >
-                    <span className="close-side-nav p-2 text-white d-flex text-center justify-content-center align-items-center" style={{ background: 'rgb(232,231,234,0.2)', borderRadius: '50%', width: '40px', height: '40px'}}>
+                    <span 
+                        className="close-side-nav p-2 text-white d-flex text-center justify-content-center align-items-center" 
+                        style={{ background: 'rgb(232,231,234,0.2)', borderRadius: '50%', width: '40px', height: '40px'}}
+                        onClick={closeSideBar}
+                    >
                         <i className="fas fa-angle-left text-white" style={{ opacity: '1'}}></i>
                     </span>
                 </div>

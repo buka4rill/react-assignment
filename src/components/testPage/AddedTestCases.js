@@ -42,10 +42,8 @@ class AddedTestCases extends Component {
                         {/* Condition to display modal */}
                         { dontShowModal ? null : (<div className="modaal">
                             <OptionsModal  />
-                        </div>) }
-                        
-                    </div>
-                    
+                        </div>) }           
+                    </div>                    
                 </div>
             </Fragment>
         )

@@ -19,7 +19,12 @@ class ActionsSection extends Component {
     }
 
     render() {
-        console.log(this.props)
+        // console.log(this.props)
+
+        // Destructure backlogs from props
+        const { backlogs } = this.props;
+        // console.log(backlogs)
+
         return (
             <div>
                 <div className="container  mt-3">
@@ -30,7 +35,7 @@ class ActionsSection extends Component {
                             <div className="simplebar" data-simplebar data-simplebar-auto-hide="false">
                                 <div className="card-scroll-1" >
                                     {/* Loop thru backlogs props from App.js and pass to ActionCard */}
-                                    {this.props.backlogs.map((backlog) => (
+                                    {backlogs.map((backlog) => (
                                         <ActionCard key={backlog.id} backlog={backlog} />
                                     ))}
                                 </div>

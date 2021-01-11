@@ -35,7 +35,19 @@ class TestPageSection extends Component {
                             </div>
                             <div className="component-display py-4">
                                 {this.props.backlogs.map((backlog) => (<AddedTestCases key={backlog.id} backlog={backlog}/>))}
+
+                                <div className="test-buttons d-flex justify-content-around" style={{ marginTop: '350px' }}>
+                                    <button className="btn btn-primary new" >
+                                        New Test Case
+                                    </button>
+
+                                    <button className="btn btn-primary test">
+                                        Test
+                                    </button>
+                                </div>
                             </div>
+
+                            
                             
                         </div>
     

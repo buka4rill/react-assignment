@@ -10851,3 +10851,18 @@ body {
 .close-side-nav:hover {
   cursor: pointer;
 }
+
+.btn.new {
+  background: #23B3E8;
+  border: 2px solid rgba(26, 12, 47, 0.1);
+  border-radius: 5px
+}
+
+.btn.test {
+  background: #FFFFFF;
+  border: 2px solid #03293D;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #03293D;
+  padding: 0 50px
+}

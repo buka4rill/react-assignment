@@ -5,6 +5,9 @@ import PropTypes from 'prop-types';
 
 
 class Backlog extends Component {
+    // backlogData;
+
+
     // Component State
     state = {
         text: ''
@@ -30,10 +33,12 @@ class Backlog extends Component {
             // console.log(this.state.text);
             
             // Add Backlogs cards
+            // Add to local storage also...
+            // this.props.addBacklogs(localStorage.setItem('backlogs', JSON.stringify(this.state.text)));
             this.props.addBacklogs(this.state.text);
 
             // Clear state
-            this.setState({ title: '' });
+            this.setState({ text: '' });
         }
 
     }
@@ -47,6 +52,24 @@ class Backlog extends Component {
             this.onSubmit(e);
         } 
     }
+
+    // React Life Cycle
+    // componentDidMount() {
+    //     this.backlogData = JSON.parse(localStorage.getItem('backlogs'));
+
+    //     // If there are backlogs in localstorage, set state
+    //     if (localStorage.getItem('backlogs')) {
+    //         this.setState({
+    //             title: this.backlogData.title,
+    //         })
+    //     } else {
+    //         this.setState({
+    //             title: ''
+    //         })
+    //     }
+
+    //     console.log(this.backlogData);
+    // } 
 
 
 
